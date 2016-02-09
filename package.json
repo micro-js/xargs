@@ -2,7 +2,7 @@
   "name": "@f/xargs",
   "description": "Transform the arguments of a function",
   "repository": "git://github.com/micro-js/xargs.git",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
