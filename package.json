@@ -1,0 +1,17 @@
+{
+  "name": "@f/xargs",
+  "description": "Transform the arguments of a function",
+  "repository": "git://github.com/micro-js/xargs.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {
+    "@f/identity": "^1.1.1"
+  },
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
