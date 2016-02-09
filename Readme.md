@@ -14,7 +14,9 @@ Transform the arguments of a function
 
 ## Usage
 
-xargs creates a wrapper for a function that transforms its arguments based on their position. E.g.
+xargs creates a wrapper for a function that transforms its arguments based on their position. E.g. `xargs(fn, add1, times2) -> (a, b) => fn(add1(a), times2(b))`.
+
+Simple example:
 
 ```javascript
 const newAdd = xargs(add, times2, times3)
@@ -46,7 +48,7 @@ Note that it passes through any additional parameters unchanged.
 - `fn` - The function who's arguments you want to transform
 - `xfs` - A list of transforms. Each transform will receive the argument in its position. So:
 
-**Returns:**
+**Returns:** A wrapped version of `fn` whos arguments will be transformed by each of the respective `xf` transform functions passed to `xargs`.
 
 ## License
 
